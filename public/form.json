@@ -1,0 +1,22 @@
+{
+  "form_code": "IMF-04",
+  "title": "Student Exchange Mobility Grant Application",
+  "office": "Office of International Affairs, Room 204, Jamjuree 1 Building — int.affairs@university.example — Mon–Fri 09:00–16:00",
+  "official_notice": "NOTICE OF APPLICATION PROCEDURE — FORM IMF-04. Pursuant to Clause 4.2 of the Inter-University Student Mobility Framework (Revision B.E. 2568), applicants seeking disbursement of the Mobility Grant shall duly complete Form IMF-04 in its entirety and furnish the same to the Office of International Affairs no later than fifteen (15) working days prior to the intended commencement of the exchange period. Applications submitted with incomplete particulars, or absent the requisite supporting documentation as enumerated in Annex II (namely: certified transcript of academic records, letter of provisional acceptance from the host institution, and evidence of enrolment in good standing), shall be deemed inadmissible and returned to the applicant without prejudice. Applicants are further advised that the particulars furnished herein shall be processed in accordance with the Personal Data Protection Act and shall be utilised solely for the purposes of grant administration. Any misrepresentation of material fact shall constitute grounds for revocation of the grant and referral to the Committee on Student Discipline.",
+  "required_documents": [
+    "Certified transcript of academic records",
+    "Letter of provisional acceptance from the host institution",
+    "Evidence of enrolment in good standing"
+  ],
+  "deadline_rule": "At least 15 working days before the exchange period starts.",
+  "fields": [
+    { "id": "full_name", "label": "Name of Applicant (as per passport)", "plain": "Your full name, spelled exactly like in your passport" },
+    { "id": "date_of_birth", "label": "Date of Birth (DD/MM/YYYY)", "plain": "Your birthday" },
+    { "id": "nationality", "label": "Nationality", "plain": "The country of your passport" },
+    { "id": "student_id", "label": "Student Identification Number", "plain": "Your student ID number" },
+    { "id": "home_university", "label": "Home Institution", "plain": "The university where you study now" },
+    { "id": "host_university", "label": "Host Institution", "plain": "The university you are going to" },
+    { "id": "exchange_period", "label": "Intended Period of Mobility", "plain": "When your exchange starts and ends" },
+    { "id": "email", "label": "Electronic Mail Address for Correspondence", "plain": "Your email address" }
+  ]
+}

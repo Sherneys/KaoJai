@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearForm — plain-language help with official forms</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>ClearForm</h1>
+      <p class="tagline">Official forms, explained simply. Answer out loud or by typing — we fill in the paperwork.</p>
+    </div>
+    <div class="header-controls">
+      <button id="text-size" type="button" aria-label="Make text bigger">A<span class="a-plus">A+</span></button>
+      <label class="voice-toggle">
+        <input type="checkbox" id="voice-out" checked />
+        Read answers aloud
+      </label>
+    </div>
+  </header>
+
+  <p class="privacy-note" role="note">
+    Privacy: your answers stay on this screen. Nothing is saved or submitted when you close the page.
+  </p>
+
+  <main class="layout">
+    <!-- Conversation -->
+    <section class="panel chat-panel" aria-label="Conversation with your assistant">
+      <h2>Your assistant</h2>
+      <div id="log" class="log" role="log" aria-live="polite"></div>
+      <p id="status" class="status" role="status"></p>
+      <form id="composer" class="composer">
+        <button id="mic" type="button" aria-label="Answer by voice" title="Answer by voice">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v5a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11Z"/></svg>
+        </button>
+        <label class="visually-hidden" for="input">Type your answer</label>
+        <input id="input" type="text" autocomplete="off" placeholder="Type your answer here…" />
+        <button id="send" type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- The official form, filling in live -->
+    <section class="panel form-panel" aria-label="The official form">
+      <h2 id="form-title">Loading form…</h2>
+      <details class="official-notice">
+        <summary>See the official notice (the hard-to-read version)</summary>
+        <p id="notice-text"></p>
+      </details>
+      <p id="progress" class="progress" aria-live="polite"></p>
+      <dl id="fields" class="fields"></dl>
+      <div id="done-banner" class="done-banner" hidden>
+        <p><strong>All done.</strong> Check your answers above, then print or save the form to take to the office.</p>
+        <button id="print" type="button">Print this form</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Group 03 — AI for Public Service &amp; Accessibility · Chula x UM Student Mobility Program 2026 · Demo only, not an official channel.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

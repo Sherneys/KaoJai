@@ -1,0 +1,14 @@
+{
+  "name": "clearform",
+  "version": "1.0.0",
+  "description": "ClearForm — AI assistant that explains bureaucratic forms in plain language and fills them out with you. Chula x UM Student Mobility Program 2026, Group 03.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.12.0",
+    "express": "^4.21.0"
+  }
+}
